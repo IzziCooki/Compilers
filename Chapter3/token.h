@@ -5,5 +5,6 @@ typedef enum
     TOKEN_ADD,
     TOKEN_IDENT,
     TOKEN_NUMBER,
-    TOKEN_ERROR
+    TOKEN_ERROR,
+    TOKEN_DAY
 } token_t;

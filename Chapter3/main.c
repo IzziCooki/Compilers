@@ -5,10 +5,10 @@ extern int yylex();
 extern char *yytext;
 int main()
 {
-    yyin = fopen("./scanner.c", "r");
+    yyin = fopen("hello_world.c", "r");
     if (!yyin)
     {
-        printf("could not open scanner.c!\n");
+        printf("could not open hello_world.c!\n");
         return 1;
     }
     while (1)

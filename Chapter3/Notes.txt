@@ -1,0 +1,5 @@
+To run: 
+
+1) Complie the flex file: flex -o scanner.c scanner.flex
+2) Link the Main.c and Scanner.c: gcc main.c scanner.c -o scanner_app
+3) Fun the scanner app, input comes from hello_world.c: ./scanner_app
