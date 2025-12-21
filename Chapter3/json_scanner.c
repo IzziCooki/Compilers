@@ -1,6 +1,6 @@
-#line 2 "scanner.c"
+#line 2 "./json_scanner.c"
 
-#line 4 "scanner.c"
+#line 4 "./json_scanner.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -361,11 +361,11 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[27] =
+static const flex_int16_t yy_accept[26] =
     {   0,
         0,    0,   11,    9,    1,    1,    9,    2,    4,    8,
         6,    7,    9,    4,    5,    1,    0,    0,    3,    4,
-        4,    5,    8,    6,    7,    0
+        4,    5,    8,    7,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -406,36 +406,36 @@ static const YY_CHAR yy_meta[14] =
         1,    4,    5
     } ;
 
-static const flex_int16_t yy_base[30] =
+static const flex_int16_t yy_base[29] =
     {   0,
-        0,    0,   26,   35,    0,    0,   10,   35,   16,   18,
-       16,   14,    8,    0,    0,    0,    0,    0,   35,    0,
-        0,    0,   11,    9,    7,   35,   13,   27,   29
+        0,    0,   24,   35,    0,    0,   10,   35,   16,   16,
+       35,   10,    7,    0,    0,    0,    0,    0,    0,    0,
+        0,    0,   10,    7,   35,   13,   27,   29
     } ;
 
-static const flex_int16_t yy_def[30] =
+static const flex_int16_t yy_def[29] =
     {   0,
-       26,    1,   26,   26,   27,   27,   26,   26,   26,   26,
-       26,   26,    7,   28,   29,   27,    7,   13,   26,    9,
-       28,   29,   26,   26,   26,    0,   26,   26,   26
+       25,    1,   25,   25,   26,   26,   25,   25,   25,   25,
+       25,   25,    7,   27,   28,   26,    7,   13,   13,    9,
+       27,   28,   25,   25,    0,   25,   25,   25
     } ;
 
 static const flex_int16_t yy_nxt[49] =
     {   0,
         4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
-        4,   14,   15,   17,   16,   25,   24,   23,   26,   18,
-       19,   20,   25,   24,   23,   26,   26,   21,   22,   21,
-       21,   22,   26,   22,    3,   26,   26,   26,   26,   26,
-       26,   26,   26,   26,   26,   26,   26,   26
+        4,   14,   15,   17,   16,   24,   23,   25,   24,   18,
+       19,   20,   23,   25,   25,   25,   25,   21,   22,   21,
+       21,   22,   25,   22,    3,   25,   25,   25,   25,   25,
+       25,   25,   25,   25,   25,   25,   25,   25
     } ;
 
 static const flex_int16_t yy_chk[49] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    7,   27,   25,   24,   23,   13,    7,
-        7,    9,   12,   11,   10,    3,    0,    9,    9,   28,
-       28,   29,    0,   29,   26,   26,   26,   26,   26,   26,
-       26,   26,   26,   26,   26,   26,   26,   26
+        1,    1,    1,    7,   26,   24,   23,   13,   12,    7,
+        7,    9,   10,    3,    0,    0,    0,    9,    9,   27,
+       27,   28,    0,   28,   25,   25,   25,   25,   25,   25,
+       25,   25,   25,   25,   25,   25,   25,   25
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -452,11 +452,11 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "json_scanner.flex"
-#line 2 "json_scanner.flex"
+#line 1 "./json_scanner.flex"
+#line 2 "./json_scanner.flex"
 #include "token.h"
-#line 459 "scanner.c"
-#line 460 "scanner.c"
+#line 459 "./json_scanner.c"
+#line 460 "./json_scanner.c"
 
 #define INITIAL 0
 
@@ -673,9 +673,9 @@ YY_DECL
 		}
 
 	{
-#line 15 "json_scanner.flex"
+#line 15 "./json_scanner.flex"
 
-#line 679 "scanner.c"
+#line 679 "./json_scanner.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -702,7 +702,7 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 27 )
+				if ( yy_current_state >= 26 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -735,55 +735,55 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 16 "json_scanner.flex"
+#line 16 "./json_scanner.flex"
 { /* skip whitespace */ }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 17 "json_scanner.flex"
+#line 17 "./json_scanner.flex"
 { return TOKEN_ADD;     }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 18 "json_scanner.flex"
+#line 18 "./json_scanner.flex"
 { return TOKEN_STRING;  }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 19 "json_scanner.flex"
+#line 19 "./json_scanner.flex"
 { return TOKEN_LBRACKET; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 20 "json_scanner.flex"
+#line 20 "./json_scanner.flex"
 { return TOKEN_RBRACKET; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 21 "json_scanner.flex"
+#line 21 "./json_scanner.flex"
 { return TOKEN_COLON;   }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 22 "json_scanner.flex"
+#line 22 "./json_scanner.flex"
 { return TOKEN_IDENT;   }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 23 "json_scanner.flex"
+#line 23 "./json_scanner.flex"
 { return TOKEN_NUMBER;  }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 24 "json_scanner.flex"
+#line 24 "./json_scanner.flex"
 { return TOKEN_ERROR;   }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 26 "json_scanner.flex"
+#line 26 "./json_scanner.flex"
 ECHO;
 	YY_BREAK
-#line 787 "scanner.c"
+#line 787 "./json_scanner.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1080,7 +1080,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 27 )
+			if ( yy_current_state >= 26 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1108,11 +1108,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 27 )
+		if ( yy_current_state >= 26 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 26);
+	yy_is_jam = (yy_current_state == 25);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1788,7 +1788,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 26 "json_scanner.flex"
+#line 26 "./json_scanner.flex"
 
 
 int yywrap() { return 1; }

@@ -6,5 +6,8 @@ typedef enum
     TOKEN_IDENT,
     TOKEN_NUMBER,
     TOKEN_ERROR,
-    TOKEN_DAY
+    TOKEN_STRING,
+    TOKEN_LBRACKET,
+    TOKEN_RBRACKET,
+    TOKEN_COLON
 } token_t;

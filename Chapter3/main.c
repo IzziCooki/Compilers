@@ -5,10 +5,10 @@ extern int yylex();
 extern char *yytext;
 int main()
 {
-    yyin = fopen("hello_world.c", "r");
+    yyin = fopen("jsonfile.json", "r");
     if (!yyin)
     {
-        printf("could not open hello_world.c!\n");
+        printf("could not open jsonfile.json!\n");
         return 1;
     }
     while (1)
